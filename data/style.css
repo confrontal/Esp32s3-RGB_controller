@@ -1,0 +1,169 @@
+@media(min-width: 700px){
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+.Text{
+    color: white;
+    padding: 8px;
+    font-family: 'Roboto Medium', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.interface{
+    background-color:rgb(62, 0, 104);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 10px;
+    border-radius: 1rem;
+    width: 85%;
+    
+    min-width: 550px;
+}
+.color-container {
+    width: 90%;
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    justify-content: space-around;
+
+    margin: 20px;
+}
+  
+.color-container > * {
+    flex-shrink: 0;
+    margin-right: 10px; /* Optional: Adjust spacing between child elements */
+}
+
+.color-picking-section{
+    background-color:rgb(107, 0, 179);
+    min-width: 400px;
+
+    max-height: max-content;
+
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 1rem;
+    box-shadow: 0 8px 0px rgba(0 0 0/0.15);
+}
+.color-preview-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    width: fit-content;
+}
+
+.color-preview{
+    background-color: var(--bkg-color,rgb(134, 134, 134));
+    border: solid rgba(107, 0, 179, 0.466);
+    box-shadow: 0 8px 0px rgba(0 0 0/0.15);
+    width: 50px;
+    height: 60%;
+    max-height: 100px;
+    border-radius: 1rem;
+    align-content: center;
+}
+
+
+.color-input{
+    background-color:rgb(134, 134, 134);
+    border: solid rgba(107, 0, 179, 0.466);
+    width: 80%;
+    height: 90%;
+    padding: 2%;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider-container{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 1%;
+    padding-right: 1%;
+
+    width: 90%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.red-slider{
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(255, 0, 0) 100%);
+    border-radius: 1rem;
+}
+.red-slider::-webkit-slider-thumb{
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    border-radius: 1rem;
+    width: 17px; /* Set a specific slider handle width */
+    height: 17px; /* Slider handle height */
+    background: var(--thumb-color, rgba(0,0,0,1)); /* Green background */
+    border: 2px solid  rgb(255, 255, 255);
+    cursor: pointer; /* Cursor on hover */
+}
+.green-slider{
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,255,0,1) 100%);
+    border-radius: 1rem;
+}
+.green-slider::-webkit-slider-thumb{
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    border-radius: 1rem;
+    width: 17px; /* Set a specific slider handle width */
+    height: 17px; /* Slider handle height */
+    background: var(--thumb-color, rgba(0,0,0,1)); /* Green background */
+    border: 2px solid rgb(255, 255, 255);
+    cursor: pointer; /* Cursor on hover */
+}
+.blue-slider{
+    width: 100%;
+    -webkit-appearance: none;
+    appearance: none;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(0, 0, 255) 100%);
+    border-radius: 1rem;
+}
+.blue-slider::-webkit-slider-thumb{
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    border-radius: 1rem;
+    width: 17px; /* Set a specific slider handle width */
+    height: 17px; /* Slider handle height */
+    background: var(--thumb-color, rgba(0,0,0,1)); /* Green background */
+    border: 2px solid rgb(255, 255, 255);
+    cursor: pointer; /* Cursor on hover */
+}
+
+.update-lights-btn{
+    cursor: pointer;
+    width: 80%;
+    padding: 1em;
+    margin-bottom: 1em;
+    border: none;
+    border-bottom: 5px solid rgba(22, 22, 22, 0.322);
+    border-radius: 0.5em;
+    background-color: rgb(107, 0, 179);
+    color: rgb(187, 187, 187);
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}

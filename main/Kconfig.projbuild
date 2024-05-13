@@ -1,0 +1,35 @@
+menu "Example Configuration"
+
+    config ESP_WIFI_SSID
+        string "WiFi SSID"
+        default "myssid"
+        help
+            SSID (network name) for the example to connect to.
+
+    config ESP_WIFI_PASSWORD
+        string "WiFi Password"
+        default "mypassword"
+        help
+            WiFi password (WPA or WPA2) for the example to use.
+    
+
+    config ESP_WIFI_SSID_DODGE
+        string "WiFI SSID 2"
+        default "SSID"
+        help
+            SSID (network name) for the example to connect to when the esp cant connect to the first choice.
+    
+    config ESP_WIFI_PASSWORD_DODGE
+        string "WiFi Password"
+        default "mypassword"
+        help
+            WiFi password (WPA or WPA2) for the example to use.
+
+    config ESP_MAXIMUM_RETRY
+        int "Maximum retry"
+        default 5
+        help
+            Set the Maximum retry to avoid station reconnecting to the AP unlimited when the AP is really inexistent.
+    
+    
+endmenu

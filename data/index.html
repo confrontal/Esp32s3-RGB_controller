@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' type="text/css" href='style.css'>
+  <title>LED Light controll</title>
+  
+</head>
+
+<body>
+  <main>
+    <div class="interface" id="interface">
+      <div class="settings" id="settings">
+        <input type="number" class="interface-number-picker" id="number-led" min="1" max="100" value="1"/>
+        <input type="button" id="update-size" value="change"/>
+      </div>
+      <div class="settings" id="settings">
+        <label class="Text">Apply Color to all LED's</label>
+        <input type="checkbox" class="switch" id="affect-all"/>
+      </div>
+      
+      <div class="color-container" id="color-container">
+
+      </div>
+    </div>
+    
+    
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>

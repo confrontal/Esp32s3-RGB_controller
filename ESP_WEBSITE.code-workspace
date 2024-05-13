@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"esp_spi_flash.h": "c",
+			"esp_system.h": "c",
+			"stdlib.h": "c",
+			"task.h": "c",
+			"string.h": "c",
+			"connect_wifi.h": "c",
+			"esp_compiler.h": "c",
+			"typeinfo": "c",
+			"string": "c",
+			"esp_wifi.h": "c",
+			"gpio.h": "c",
+			"freertos.h": "c",
+			"ws28xx.h": "c",
+			"cstdio": "c"
+		}
+	}
+}
